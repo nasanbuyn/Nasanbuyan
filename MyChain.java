@@ -2,7 +2,7 @@ package lab3;
 
 import java.awt.EventQueue;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List; РІР°С‚Р°
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -59,22 +59,22 @@ public class MyChain {
 		textPane.setBounds(126, 190, 188, 60);
 		frame.getContentPane().add(textPane);
 		JButton btnToArray = new JButton("toArray");
-		btnToArray.addActionListener(new ActionListener() {//toArray товчны ?йлдэл
+		btnToArray.addActionListener(new ActionListener() {//toArray ГІГ®ГўГ·Г­Г» ?Г©Г«Г¤ГЅГ«
 			public void actionPerformed(ActionEvent arg0) {
-				String str[]=UndsentextField.getText().split(" ");//тэкст боксын утгийг хоосон зайгаар таслаад "str" массивт хадаглана
+				String str[]=UndsentextField.getText().split(" ");//ГІГЅГЄГ±ГІ ГЎГ®ГЄГ±Г»Г­ ГіГІГЈГЁГ©ГЈ ГµГ®Г®Г±Г®Г­ Г§Г Г©ГЈГ Г Г° ГІГ Г±Г«Г Г Г¤ "str" Г¬Г Г±Г±ГЁГўГІ ГµГ Г¤Г ГЈГ«Г Г­Г 
 				
-				for(String i:str){//str массивын б?х утгийг i хувьсагчаар давталт ашиглан авч int т?р?лр?? хувиргаж "foo"-д хадаглана
+				for(String i:str){//str Г¬Г Г±Г±ГЁГўГ»Г­ ГЎ?Гµ ГіГІГЈГЁГ©ГЈ i ГµГіГўГјГ±Г ГЈГ·Г Г Г° Г¤Г ГўГІГ Г«ГІ Г ГёГЁГЈГ«Г Г­ Г ГўГ· int ГІ?Г°?Г«Г°?? ГµГіГўГЁГ°ГЈГ Г¦ "foo"-Г¤ ГµГ Г¤Г ГЈГ«Г Г­Г 
 					String tmp = i;
 					  int foo=Integer.parseInt(tmp);
-					  arr.add(foo);//foo-г arr гэсэн жагсаалтдаа нэмнэ
+					  arr.add(foo);//foo-ГЈ arr ГЈГЅГ±ГЅГ­ Г¦Г ГЈГ±Г Г Г«ГІГ¤Г Г  Г­ГЅГ¬Г­ГЅ
 				}
 				String niilber="";
 				for(int l=0;l<arr.size();l++){
-					niilber=niilber+" "+arr.get(l);//string т?рлийн null хувьсагчид arr жагсаалтын б?х утгыг зайгаар тусгаарлан хадаглана
+					niilber=niilber+" "+arr.get(l);//string ГІ?Г°Г«ГЁГ©Г­ null ГµГіГўГјГ±Г ГЈГ·ГЁГ¤ arr Г¦Г ГЈГ±Г Г Г«ГІГ»Г­ ГЎ?Гµ ГіГІГЈГ»ГЈ Г§Г Г©ГЈГ Г Г° ГІГіГ±ГЈГ Г Г°Г«Г Г­ ГµГ Г¤Г ГЈГ«Г Г­Г 
 					
 				}
 				
-				textPane.setText(niilber);//"niilber"-г textPane дээр хэвлэж гаргана
+				textPane.setText(niilber);//"niilber"-ГЈ textPane Г¤ГЅГЅГ° ГµГЅГўГ«ГЅГ¦ ГЈГ Г°ГЈГ Г­Г 
 			}
 		});
 		btnToArray.setBounds(27, 156, 89, 23);
@@ -87,23 +87,23 @@ public class MyChain {
 				for(String i:str){
 				  String tmp = i;
 				  int foo=Integer.parseInt(tmp);
-				  arr.add(foo);//arr-д UndsentextFeild-н утгыг хадаглаж байна
+				  arr.add(foo);//arr-Г¤ UndsentextFeild-Г­ ГіГІГЈГ»ГЈ ГµГ Г¤Г ГЈГ«Г Г¦ ГЎГ Г©Г­Г 
 				}
 				
-				String str1[]=textField_input.getText().split(" ");// энэ програмд 2 textbox байгаа б?г??д нэг нь "UndsentextField" нь  програм эхэлхэд дээрх утгийг оноосон байна харин "textField_input" нь хэрэглэгч дээрх утгийг оруулна
+				String str1[]=textField_input.getText().split(" ");// ГЅГ­ГЅ ГЇГ°Г®ГЈГ°Г Г¬Г¤ 2 textbox ГЎГ Г©ГЈГ Г  ГЎ?ГЈ??Г¤ Г­ГЅГЈ Г­Гј "UndsentextField" Г­Гј  ГЇГ°Г®ГЈГ°Г Г¬ ГЅГµГЅГ«ГµГЅГ¤ Г¤ГЅГЅГ°Гµ ГіГІГЈГЁГ©ГЈ Г®Г­Г®Г®Г±Г®Г­ ГЎГ Г©Г­Г  ГµГ Г°ГЁГ­ "textField_input" Г­Гј ГµГЅГ°ГЅГЈГ«ГЅГЈГ· Г¤ГЅГЅГ°Гµ ГіГІГЈГЁГ©ГЈ Г®Г°ГіГіГ«Г­Г 
 				for(String i:str1){
 				  String tmp = i;
-				  int foo=Integer.parseInt(tmp);//дээрхтэй ижил
+				  int foo=Integer.parseInt(tmp);//Г¤ГЅГЅГ°ГµГІГЅГ© ГЁГ¦ГЁГ«
 				  arr1.add(foo);
 				}
 				for(int l=0;l<arr1.size();l++){
-					arr.add(arr1.get(l));//arr1 буюу хэрэглэгчийн оруулсан утга хадгалсан байгаа жагсаалтын утгуудийг arr жагсаалт дээр нэмж байна
+					arr.add(arr1.get(l));//arr1 ГЎГіГѕГі ГµГЅГ°ГЅГЈГ«ГЅГЈГ·ГЁГ©Г­ Г®Г°ГіГіГ«Г±Г Г­ ГіГІГЈГ  ГµГ Г¤ГЈГ Г«Г±Г Г­ ГЎГ Г©ГЈГ Г  Г¦Г ГЈГ±Г Г Г«ГІГ»Г­ ГіГІГЈГіГіГ¤ГЁГ©ГЈ arr Г¦Г ГЈГ±Г Г Г«ГІ Г¤ГЅГЅГ° Г­ГЅГ¬Г¦ ГЎГ Г©Г­Г 
 				}
 				String niilber = "";
 				for(int j =0; j < arr.size(); j++) {
 					   niilber = niilber+" "+arr.get(j);
 					 }
-				textPane.setText(niilber);//дээрэхтэй ижил
+				textPane.setText(niilber);//Г¤ГЅГЅГ°ГЅГµГІГЅГ© ГЁГ¦ГЁГ«
 			}
 		});
 		btnAddRange.setBounds(126, 156, 89, 23);
@@ -132,12 +132,12 @@ public class MyChain {
 			
 				for (int i = 0; i < arr.size(); i++) 
 		          {
-		       for (int j = i + 1; j < arr.size(); j++) //deerh addRangetei ijil UndsentextField bolon textFeild_input-н б?х утга arr жагсаалтад бий
+		       for (int j = i + 1; j < arr.size(); j++) //deerh addRangetei ijil UndsentextField bolon textFeild_input-Г­ ГЎ?Гµ ГіГІГЈГ  arr Г¦Г ГЈГ±Г Г Г«ГІГ Г¤ ГЎГЁГ©
 		          {
-		       if(arr.get(i).compareTo(arr.get(j))==0)//давхар давталтаар arr-н утгуудыг шалгаж тэнц?? байвал j дахь элементийг хасна 
+		       if(arr.get(i).compareTo(arr.get(j))==0)//Г¤Г ГўГµГ Г° Г¤Г ГўГІГ Г«ГІГ Г Г° arr-Г­ ГіГІГЈГіГіГ¤Г»ГЈ ГёГ Г«ГЈГ Г¦ ГІГЅГ­Г¶?? ГЎГ Г©ГўГ Г« j Г¤Г ГµГј ГЅГ«ГҐГ¬ГҐГ­ГІГЁГ©ГЈ ГµГ Г±Г­Г  
 		          {   
 				arr.remove(j);
-		          }//давхар давталтын онцлог хоёр дахь давталтийг дуусгаж эхний давталтын алхам нь ахина Ж/Нь эхний давталт i=0 байх ?ед j давталт дууссан ?ед i=1 болно
+		          }//Г¤Г ГўГµГ Г° Г¤Г ГўГІГ Г«ГІГ»Г­ Г®Г­Г¶Г«Г®ГЈ ГµГ®ВёГ° Г¤Г ГµГј Г¤Г ГўГІГ Г«ГІГЁГ©ГЈ Г¤ГіГіГ±ГЈГ Г¦ ГЅГµГ­ГЁГ© Г¤Г ГўГІГ Г«ГІГ»Г­ Г Г«ГµГ Г¬ Г­Гј Г ГµГЁГ­Г  Г†/ГЌГј ГЅГµГ­ГЁГ© Г¤Г ГўГІГ Г«ГІ i=0 ГЎГ Г©Гµ ?ГҐГ¤ j Г¤Г ГўГІГ Г«ГІ Г¤ГіГіГ±Г±Г Г­ ?ГҐГ¤ i=1 ГЎГ®Г«Г­Г®
 		       
 		     
 		          }
@@ -155,7 +155,7 @@ public class MyChain {
 		frame.getContentPane().add(btnUnion);
 		
 		JButton btnIntersection = new JButton("intersection");
-		btnIntersection.addActionListener(new ActionListener() {//давтагдсан elementiig hewlene (intersectionii uildel)
+		btnIntersection.addActionListener(new ActionListener() {//Г¤Г ГўГІГ ГЈГ¤Г±Г Г­ elementiig hewlene (intersectionii uildel)
 			public void actionPerformed(ActionEvent arg0) {
 				
 				String str[]=UndsentextField.getText().split(" ");
@@ -180,7 +180,7 @@ public class MyChain {
 		          {
 		       for (int j = i + 1; j < arr.size(); j++) 
 		          {
-		       if(arr.get(i)==(arr.get(j)))//тэнц?? байвал arr2 жагсаалтад нэмнэ ингэснээр з?вх?н давхардсан elementiig l hewlene 
+		       if(arr.get(i)==(arr.get(j)))//ГІГЅГ­Г¶?? ГЎГ Г©ГўГ Г« arr2 Г¦Г ГЈГ±Г Г Г«ГІГ Г¤ Г­ГЅГ¬Г­ГЅ ГЁГ­ГЈГЅГ±Г­ГЅГЅГ° Г§?ГўГµ?Г­ Г¤Г ГўГµГ Г°Г¤Г±Г Г­ elementiig l hewlene 
 		          {
 				arr2.add(arr.get(j));
 		          }
